@@ -11,3 +11,18 @@ I use the built in `mtcars` dataset to build a basic scatterplot
 ```{r scatter-basic}
 plot(mtcars$mpg, mtcars$disp)
 ```
+
+## Change colour
+
+```{r}
+plot(mtcars$mpg, mtcars$disp,
+     col = "dodgerblue1")
+```
+
+## Change symbols 
+
+```{r}
+plot(mtcars$mpg, mtcars$disp,
+     col = "dodgerblue1",
+     cex = 16)
+```
