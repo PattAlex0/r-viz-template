@@ -1,0 +1,5 @@
+#+title: Creating an R Graphics Template
+#+author: Alex Patterson
+
+
+* Creating a basic graph
