@@ -1,0 +1,18 @@
+---
+title: Creating a graphics template
+author: Alex Patterson 
+--- 
+
+# Creating a basic graph 
+
+```{r}
+# Set seed
+set.seed(0188)
+
+# Create dataframe of 1000 random values
+df_rand <- rnorm(1000, 100, 15)
+
+# Create a histogram
+hist(df_rand, 
+     main = "Plain histogram of 1000 random values")
+```
