@@ -1,7 +1,14 @@
 ---
-title: Creating a graphics template
-author: Alex Patterson 
---- 
+title: "Creating a graphics template"
+author: "Alex Patterson"
+output: html_document
+---
+
+
+```{r setup, include = FALSE}
+# Nothing here... yet
+library*
+```
 
 # Creating a basic graph 
 
@@ -15,4 +22,5 @@ df_rand <- rnorm(1000, 100, 15)
 # Create a histogram
 hist(df_rand, 
      main = "Plain histogram of 1000 random values")
+     
 ```
