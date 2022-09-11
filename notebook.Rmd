@@ -4,53 +4,10 @@ author: "Alex Patterson"
 output: html_document
 ---
 
-# Create a plain histogram
+# Create a plain plot
 
-```{r plain-histogram}
-# Set seed
-set.seed(0188)
+I use the built in `mtcars` dataset to build a basic scatterplot
 
-# Create dataframe of 1000 random values
-df_rand <- rnorm(1000, 100, 15)
-
-# Create a histogram
-base_hist <- hist(df_rand)
-```
-
-## Add colour
-
-```{r colour-histogram}
-par(col = "black",
-    bg = "black")
-
-hist(df_rand)
-```
-  
-```{r}
-# Set.seed
-set.seed(0182)
-
-# Generate random variables
-dat <- data.frame(var_one = rnorm(1000, 100, 15),
-                  var_two = rnorm(1000, 100, 15)) 
-```
-
-  
-  
-## Modify font
-
-```{r font-histogram}
-#quartzFonts(carlito = c(“Carlito”, “Carlito, Bold”, “Carlito, Regular Italitc”, 
-#“Carlito, Bold Italic”))
-
-par(family = "Helvetica",
-    font.main = 1)
-
-hist(df_rand,
-     main = "Coloured histogram of 1000 random values",
-     col = "dodgerblue1",
-     border = "white",
-     xlab = NULL,
-     ylab = NULL)
-
+```{r scatter-basic}
+plot(mtcars$mpg, mtcars$disp)
 ```
