@@ -3,3 +3,20 @@
 
 
 * Creating a basic graph
+
+#+begin_src R :exports both :results output graphics file :file viz/basic_graph.png
+
+# Set a random seet
+set.seed(8721)
+
+# Create a random distribution of values
+df_rand <- rnorm(1000, 100, 15)
+
+# Create a histogram
+hist(df_rand,
+     main = "Plain histogram of 1000 random values")
+
+#+end_src
+
+#+RESULTS:
+[[file:viz/basic_graph.png]]
